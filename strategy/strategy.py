@@ -8,7 +8,7 @@ from game.game_state import GameState
 from game.util.position import Position
 
 
-class StrategyTemplate:
+class Strategy:
     def decide_character_classes(
         self,
         possible_classes: list[CharacterClassType],

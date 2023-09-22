@@ -6,7 +6,7 @@ from game.character.action.move_action import MoveAction
 from game.character.character_class_type import CharacterClassType
 from game.game_state import GameState
 from game.util.position import Position
-
+from strategy.strategy import Strategy
 
 class ZombieStrategy:
     def decide_character_classes(
@@ -24,7 +24,7 @@ class ZombieStrategy:
 
         You should return a dictionary of class type to the number you want to use of that class
         """
-        raise NotImplementedError("Must implement the decide_moves method!")
+        raise NotImplementedError("I'm a Zombie!")
 
     def decide_moves(
         self, possible_moves: dict[str, list[MoveAction]], game_state: GameState
@@ -54,4 +54,4 @@ class ZombieStrategy:
         possible_abilities: Maps character id to it's possible abilities. You can use this to validate if a ability is possible, or pick from this list.
         game_state: The current state of all characters and terrain on the map
         """
-        raise NotImplementedError("Must implement the decide_abilities method!")
+        raise NotImplementedError("I'm a Zombie!")
