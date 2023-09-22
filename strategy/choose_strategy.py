@@ -11,9 +11,7 @@ def choose_strategy(is_zombie: bool) -> Strategy:
     # For example:
     if is_zombie:
         return SimpleZombieStrategy()
-        # return ZombieStrategy()
     else:
         return SimpleHumanStrategy()
-        # return HumanStrategy()
 
     # return RandomStrategy()
