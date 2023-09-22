@@ -9,9 +9,11 @@ def choose_strategy(is_zombie: bool) -> Strategy:
     # NOTE: You can use "is_zombie" to use two different strategies for humans and zombies (RECOMMENDED!)
     #
     # For example:
-    # if is_zombie:
-    #     return SimpleZombieStrategy()
-    # else:
-    #     return SimpleHumanStrategy()
+    if is_zombie:
+        return SimpleZombieStrategy()
+        # return ZombieStrategy()
+    else:
+        return SimpleHumanStrategy()
+        # return HumanStrategy()
 
-    return RandomStrategy()
+    # return RandomStrategy()
